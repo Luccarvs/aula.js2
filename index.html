@@ -7,14 +7,11 @@
 </head>
 <body>
     <script>
-        let idade = prompt("Digite a sua idade");
-
-        if(idade == ""){
-            alert("Insira um valor valido, pressione F5 para continuar.");
-        }if(idade >=18){
-            alert("Você é maior de idade.");
+        let resposta = confirm("Você deseja continuar?");
+        if(resposta){
+            alert("Continuando...")
         }else{
-            alert("Você e menor de idade.");
+            alert("Operação cancelada")
         }
     </script>
 </body>
