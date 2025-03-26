@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hello world</title>
 </head>
 <body>
-    
+    <input type="text" id="nome" placeholder="Nome do Cliente">
+    <button onclick="captura();">Capturar Nome</button>
+
+    <p id="resposta">Sua resposta sera exibida aqui!</p>
+
+    <script>
+        function captura(){
+            let n = document.getElementById("nome").value;
+            document.getElementById("resposta").innerText = n;
+        }
+    </script>
 </body>
 </html>
